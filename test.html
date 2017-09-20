@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<img src="https://dejin.file.core.chinacloudapi.cn/sfsf/微信图片_20170724153356.png">
+<script>
+	var htmltd = [];
+	var objdata = {};
+	objdata.data = [[1,'富士红'],[2,'富士红'],[3,'富士红'],[4,'富士红']];
+	for(i=0;i<objdata.data.length;i++){
+		htmltd.push('<tr>'); //一行开始
+		for(j=0;j<objdata.data[i].length;j++){
+			//存该行的每一列值
+			htmltd.push('<td>'+objdata.data[i][j]+'</td>');
+		}
+		
+		htmltd.push('</tr>'); //一行结束
+	}
+	
+	console.log(htmltd.join(""));
+</script>
+</body>
+</html>
